@@ -42,7 +42,6 @@ function draw() {
   background(255);
 
   //Standing, facing frontwards
-
   stroke(100);
   noFill();
   rect(20, 60, 50, 80);
@@ -53,6 +52,30 @@ function draw() {
   gameChar_x = 45;
   gameChar_y = 137;
   //Add your code here ...
+
+  // skin color
+  fill(255, 200, 200);
+
+  // arms
+  rect(gameChar_x - 15, gameChar_y - 45, 10, 20, 4);
+  rect(gameChar_x + 5, gameChar_y - 45, 10, 20, 4);
+
+  // body
+  fill(255, 0, 0);
+  rect(gameChar_x - 10, gameChar_y - 50, 20, 40);
+  rect(gameChar_x - 10, gameChar_y - 10, 6, 10);
+  rect(gameChar_x + 4, gameChar_y - 10, 6, 10);
+
+  // head
+  fill(255, 200, 200);
+  circle(gameChar_x, gameChar_y - 60, 30, 30);
+
+  // eyes
+  fill(0);
+  circle(gameChar_x - 5, gameChar_y - 65, 5, 5);
+  circle(gameChar_x + 5, gameChar_y - 65, 5, 5);
+
+  // -------------------------------------------------------------
 
   //Jumping facing forwards
   stroke(100);
@@ -66,6 +89,50 @@ function draw() {
   gameChar_y = 137;
   //Add your code here ...
 
+  // skin color
+  fill(255, 200, 200);
+
+  // arms
+  rect(gameChar_x - 15, gameChar_y - 45, 10, 20, 4);
+  rect(gameChar_x + 5, gameChar_y - 45, 10, 20, 4);
+
+  // body
+  fill(255, 0, 0);
+  rect(gameChar_x - 10, gameChar_y - 50, 20, 40);
+
+  fill(255, 0, 0);
+  rect(gameChar_x - 7, gameChar_y - 50, 14, 40);
+  beginShape();
+  vertex(gameChar_x, gameChar_y - 10);
+  vertex(gameChar_x + 4, gameChar_y - 4);
+  vertex(gameChar_x + 4, gameChar_y);
+  vertex(gameChar_x + 8, gameChar_y);
+  vertex(gameChar_x + 8, gameChar_y - 4);
+  vertex(gameChar_x + 6, gameChar_y - 10);
+  endShape(CLOSE);
+
+  fill(255, 0, 0);
+  rect(gameChar_x - 7, gameChar_y - 50, 14, 40);
+  beginShape();
+  vertex(gameChar_x, gameChar_y - 10);
+  vertex(gameChar_x - 4, gameChar_y - 4);
+  vertex(gameChar_x - 4, gameChar_y);
+  vertex(gameChar_x - 8, gameChar_y);
+  vertex(gameChar_x - 8, gameChar_y - 4);
+  vertex(gameChar_x - 6, gameChar_y - 10);
+  endShape(CLOSE);
+
+  // head
+  fill(255, 200, 200);
+  circle(gameChar_x, gameChar_y - 60, 30, 30);
+
+  // eyes
+  fill(0);
+  circle(gameChar_x - 5, gameChar_y - 65, 5, 5);
+  circle(gameChar_x + 5, gameChar_y - 65, 5, 5);
+
+  // -------------------------------------------------------------
+
   //Walking, turned left
   stroke(100);
   noFill();
@@ -77,6 +144,28 @@ function draw() {
   gameChar_x = 45;
   gameChar_y = 337;
   //Add your code here ...
+
+  // skin color
+  fill(255, 200, 200);
+
+  // body
+  fill(255, 0, 0);
+  rect(gameChar_x - 7, gameChar_y - 50, 14, 40);
+  rect(gameChar_x - 3, gameChar_y - 10, 6, 10);
+
+  // head
+  fill(255, 200, 200);
+  circle(gameChar_x, gameChar_y - 60, 30, 30);
+
+  // eyes
+  fill(0);
+  circle(gameChar_x - 5, gameChar_y - 65, 5, 5);
+
+  // arm
+  fill(255, 200, 200);
+  rect(gameChar_x - 5, gameChar_y - 45, 10, 20, 4);
+
+  // -------------------------------------------------------------
 
   //Walking, turned right
   stroke(100);
@@ -90,6 +179,28 @@ function draw() {
   gameChar_y = 337;
   //Add your code here ...
 
+  // skin color
+  fill(255, 200, 200);
+
+  // body
+  fill(255, 0, 0);
+  rect(gameChar_x - 7, gameChar_y - 50, 14, 40);
+  rect(gameChar_x - 3, gameChar_y - 10, 6, 10);
+
+  // head
+  fill(255, 200, 200);
+  circle(gameChar_x, gameChar_y - 60, 30, 30);
+
+  // eyes
+  fill(0);
+  circle(gameChar_x + 5, gameChar_y - 65, 5, 5);
+
+  // arm
+  fill(255, 200, 200);
+  rect(gameChar_x - 5, gameChar_y - 45, 10, 20, 4);
+
+  // -------------------------------------------------------------
+
   //Jumping right
   stroke(100);
   noFill();
@@ -102,6 +213,35 @@ function draw() {
   gameChar_y = 537;
   //Add your code here ...
 
+  // skin color
+  fill(255, 200, 200);
+
+  // body
+  fill(255, 0, 0);
+  rect(gameChar_x - 7, gameChar_y - 50, 14, 40);
+  beginShape();
+  vertex(gameChar_x, gameChar_y - 10);
+  vertex(gameChar_x + 2, gameChar_y - 4);
+  vertex(gameChar_x + 2, gameChar_y);
+  vertex(gameChar_x + 6, gameChar_y);
+  vertex(gameChar_x + 6, gameChar_y - 4);
+  vertex(gameChar_x + 4, gameChar_y - 10);
+  endShape(CLOSE);
+
+  // head
+  fill(255, 200, 200);
+  circle(gameChar_x, gameChar_y - 60, 30, 30);
+
+  // eyes
+  fill(0);
+  circle(gameChar_x + 5, gameChar_y - 65, 5, 5);
+
+  // arm
+  fill(255, 200, 200);
+  rect(gameChar_x - 5, gameChar_y - 45, 10, 20, 4);
+
+  // -------------------------------------------------------------
+
   //Jumping to the left
   stroke(100);
   noFill();
@@ -113,4 +253,31 @@ function draw() {
   gameChar_x = 245;
   gameChar_y = 537;
   //Add your code here ...
+
+  // skin color
+  fill(255, 200, 200);
+
+  // body
+  fill(255, 0, 0);
+  rect(gameChar_x - 7, gameChar_y - 50, 14, 40);
+  beginShape();
+  vertex(gameChar_x, gameChar_y - 10);
+  vertex(gameChar_x - 2, gameChar_y - 4);
+  vertex(gameChar_x - 2, gameChar_y);
+  vertex(gameChar_x - 6, gameChar_y);
+  vertex(gameChar_x - 6, gameChar_y - 4);
+  vertex(gameChar_x - 4, gameChar_y - 10);
+  endShape(CLOSE);
+
+  // head
+  fill(255, 200, 200);
+  circle(gameChar_x, gameChar_y - 60, 30, 30);
+
+  // eyes
+  fill(0);
+  circle(gameChar_x - 5, gameChar_y - 65, 5, 5);
+
+  // arm
+  fill(255, 200, 200);
+  rect(gameChar_x - 5, gameChar_y - 45, 10, 20, 4);
 }
