@@ -11,7 +11,7 @@ function drawTree(x, y, width, height) {
   rect(x + width * 0.35, y + height * 0.7, width * 0.3, height * 0.3);
 
   // green leaves in 3 layers
-  fill(0, 100, 0);
+  fill(0, 101, 0);
   for (let i = 0; i < 3; i++)
     triangle(
       x + width * 0.5,
